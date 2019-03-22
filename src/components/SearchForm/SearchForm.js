@@ -24,12 +24,13 @@ const SearchForm = () => {
             </div>
             <form className="SearchForm-form" onSubmit={onSearchSubmit}>
                 <input
+                    className="SearchForm-input"
                     placeholder="search images - laptops, wallpapers, etc" 
                     type="search"
                     value={inputValue}
                     onChange={onInputChange}
                 />
-                <button type="submit">Search</button>
+                <button className="SearchForm-button" type="submit">Search</button>
             </form>
         </section>
     );
