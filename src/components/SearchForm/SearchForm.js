@@ -6,15 +6,15 @@ const SearchForm = () => {
     const [inputValue, setInputValue] = useState(defaultSearchValue);
     const [search, setSearch] = useState(defaultSearchValue);
 
-    const onInputChange = (e) => {
+    const onInputChange = e => {
         setInputValue(e.target.value);
-    }
+    };
 
-    const onSearchSubmit = (e) => {
+    const onSearchSubmit = e => {
         e.preventDefault();
         setSearch(inputValue);
         console.log(search);
-    }
+    };
 
     return (
         <section className="SearchForm">
@@ -25,12 +25,14 @@ const SearchForm = () => {
             <form className="SearchForm-form" onSubmit={onSearchSubmit}>
                 <input
                     className="SearchForm-input"
-                    placeholder="search images - laptops, wallpapers, etc" 
+                    placeholder="search images - laptops, wallpapers, etc"
                     type="search"
                     value={inputValue}
                     onChange={onInputChange}
                 />
-                <button className="SearchForm-button" type="submit">Search</button>
+                <button className="SearchForm-button" type="submit">
+                    Search
+                </button>
             </form>
         </section>
     );

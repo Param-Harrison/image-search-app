@@ -1,8 +1,8 @@
-import React from 'react'
-import SearchForm from '../../components/SearchForm'
+import React from 'react';
+import SearchForm from '../../components/SearchForm';
 
 const IndexPage = () => {
-    return <SearchForm />
-}
+    return <SearchForm />;
+};
 
-export default IndexPage
+export default IndexPage;
