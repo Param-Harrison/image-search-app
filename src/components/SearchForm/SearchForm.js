@@ -18,10 +18,10 @@ const SearchForm = () => {
 
     return (
         <section className="SearchForm">
-            <div className="SearchForm-content">
-                <h1>Asgard</h1>
-                <p>Image search using unsplash API</p>
-            </div>
+            <h1 className="SearchForm-title">Asgard</h1>
+            <p className="SearchForm-description">
+                Image search using unsplash API
+            </p>
             <form className="SearchForm-form" onSubmit={onSearchSubmit}>
                 <input
                     className="SearchForm-input"
