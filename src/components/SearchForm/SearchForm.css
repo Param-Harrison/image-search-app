@@ -1,0 +1,31 @@
+.SearchForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.SearchForm-title {
+    font-size: 4rem;
+    margin-top: 0;
+    margin-bottom: 1.4rem;
+}
+.SearchForm-description {
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #555555;
+}
+.SearchForm-input {
+    display: block;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+.SearchForm-button {
+    background-color: #008dea;
+    color: #fff;
+}
+.SearchForm-button:hover,
+.SearchForm-button:focus,
+.SearchForm-button:active {
+    background-color: #007ed1;
+}

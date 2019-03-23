@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import SearchForm from './components/SearchForm';
+import IndexPage from './pages/IndexPage';
 
 const App = () => (
-  <div className="App">
-    <SearchForm />
-  </div>
+    <div className="App">
+        <IndexPage />
+    </div>
 );
 
 export default App;
