@@ -1,7 +1,21 @@
-h1,
-.h1 {
-    font-size: 4.5rem;
+/* Typography */
+h1 {
+    font-size: 4rem;
 }
+p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+a {
+    color: #008dea;
+}
+a:hover,
+a:focus,
+a:active {
+    color: #006ed1;
+}
+
+/* Form elements */
 input[type='search'] {
     line-height: 1.2rem;
     padding: 1rem;

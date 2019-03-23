@@ -5,14 +5,11 @@
     height: 100vh;
 }
 .SearchForm-title {
-    font-size: 4rem;
     margin-top: 0;
     margin-bottom: 1.4rem;
 }
 .SearchForm-description {
     margin: 0;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
     color: #555555;
 }
 .SearchForm-input {
