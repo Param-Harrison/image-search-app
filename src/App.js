@@ -14,6 +14,16 @@ const App = () => (
                 <Route path="/search/:searchText" component={SearchPage} />
                 <Route component={NoMatchPage} />
             </Switch>
+            <footer className="App-footer">
+                <p className="App-footer-description">
+                    Images are powered by{' '}
+                    <img
+                        className="App-footer-logo"
+                        alt="pixabay logo"
+                        src="https://pixabay.com/static/img/logo.svg"
+                    />
+                </p>
+            </footer>
         </div>
     </Router>
 );
