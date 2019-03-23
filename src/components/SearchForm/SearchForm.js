@@ -1,26 +1,24 @@
 import React, { useState } from 'react';
 import './SearchForm.css';
 
-const SearchForm = () => {
-    const defaultSearchValue = '';
-    const [inputValue, setInputValue] = useState(defaultSearchValue);
-    const [search, setSearch] = useState(defaultSearchValue);
+const SearchForm = ({ onSearch }) => {
+    const defaultSearchText = '';
+    const [search, setSearch] = useState(defaultSearchText);
 
     const onInputChange = e => {
-        setInputValue(e.target.value);
+        setSearch(e.target.value);
     };
 
-    const onSearchSubmit = e => {
+    const onSearchFormSubmit = e => {
         e.preventDefault();
-        setSearch(inputValue);
-        console.log(search);
+        onSearch(search);
     };
 
     return (
         <section className="SearchForm">
             <h1 className="SearchForm-title">Asgard</h1>
             <p className="SearchForm-description">
-                Beautiful, free photos from unsplash
+                Beautiful, free photos from unsplash.
             </p>
             <p className="SearchForm-description">
                 Gifted by the world’s most generous community of photographers.{' '}
@@ -28,12 +26,12 @@ const SearchForm = () => {
                     🎁
                 </span>
             </p>
-            <form className="SearchForm-form" onSubmit={onSearchSubmit}>
+            <form className="SearchForm-form" onSubmit={onSearchFormSubmit}>
                 <input
                     className="SearchForm-input"
                     placeholder="search images - laptops, wallpapers, etc"
                     type="search"
-                    value={inputValue}
+                    value={search}
                     onChange={onInputChange}
                 />
                 <button className="SearchForm-button" type="submit">

@@ -1,8 +1,14 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
+
 import './SearchPage.css';
 
-const SearchPage = () => {
-    return <div>Search Page</div>;
+const SearchPage = ({ match }) => {
+    return (
+        <div>
+            Search for <strong>{match.params.searchText}</strong>
+        </div>
+    );
 };
 
-export default SearchPage;
+export default withRouter(SearchPage);
