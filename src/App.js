@@ -17,11 +17,17 @@ const App = () => (
             <footer className="App-footer">
                 <p className="App-footer-description">
                     Images are powered by{' '}
-                    <img
-                        className="App-footer-logo"
-                        alt="pixabay logo"
-                        src="https://pixabay.com/static/img/logo.svg"
-                    />
+                    <a
+                        href="https://pixabay.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            className="App-footer-logo"
+                            alt="pixabay logo"
+                            src="https://pixabay.com/static/img/logo.svg"
+                        />
+                    </a>
                 </p>
             </footer>
         </div>
