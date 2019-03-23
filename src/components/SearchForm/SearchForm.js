@@ -20,7 +20,13 @@ const SearchForm = () => {
         <section className="SearchForm">
             <h1 className="SearchForm-title">Asgard</h1>
             <p className="SearchForm-description">
-                Image search using unsplash API
+                Beautiful, free photos from unsplash
+            </p>
+            <p className="SearchForm-description">
+                Gifted by the world’s most generous community of photographers.{' '}
+                <span role="img" aria-labelledby="giftbox">
+                    🎁
+                </span>
             </p>
             <form className="SearchForm-form" onSubmit={onSearchSubmit}>
                 <input
