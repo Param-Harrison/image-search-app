@@ -64,3 +64,18 @@ button:focus,
 button:active {
     background-color: #cacbcd;
 }
+
+/* Footer */
+.App-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.App-footer-description {
+    color: #555555;
+    font-size: 0.9rem;
+}
+.App-footer-logo {
+    width: 100px;
+}

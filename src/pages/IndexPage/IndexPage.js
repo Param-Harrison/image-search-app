@@ -11,9 +11,20 @@ const IndexPage = ({ history }) => {
 
     return (
         <section className="IndexPage">
-            <div className="IndexPage-container">
+            <main className="IndexPage-container">
+                <h1 className="IndexPage-title">Asgard</h1>
+                <p className="IndexPage-description">
+                    Beautiful, free photos from pixabay.
+                </p>
+                <p className="IndexPage-description">
+                    Gifted by the world’s most generous community of
+                    photographers.{' '}
+                    <span role="img" aria-labelledby="giftbox">
+                        🎁
+                    </span>
+                </p>
                 <SearchForm onSearch={onSearch} />
-            </div>
+            </main>
         </section>
     );
 };
