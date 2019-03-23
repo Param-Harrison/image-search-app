@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './SearchForm.css';
 
 const SearchForm = ({ onSearch }) => {
-    const defaultSearchValue = '';
-    const [search, setSearch] = useState(defaultSearchValue);
+    const defaultSearchText = '';
+    const [search, setSearch] = useState(defaultSearchText);
 
     const onInputChange = e => {
         setSearch(e.target.value);

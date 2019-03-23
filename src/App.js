@@ -9,7 +9,7 @@ const App = () => (
     <Router>
         <div className="App">
             <Route path="/" exact component={IndexPage} />
-            <Route path="/search" component={SearchPage} />
+            <Route path="/search/:searchText" component={SearchPage} />
         </div>
     </Router>
 );

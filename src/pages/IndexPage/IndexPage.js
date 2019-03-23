@@ -1,10 +1,12 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
+
 import SearchForm from '../../components/SearchForm';
 import './IndexPage.css';
 
-const IndexPage = () => {
-    const onSearch = search => {
-        console.log(search);
+const IndexPage = ({ history }) => {
+    const onSearch = searchText => {
+        history.push(`/search/${searchText}`);
     };
 
     return (
@@ -16,4 +18,4 @@ const IndexPage = () => {
     );
 };
 
-export default IndexPage;
+export default withRouter(IndexPage);
