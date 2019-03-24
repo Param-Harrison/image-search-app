@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom';
 import axios from 'axios';
 
 import './SearchPage.css';
+import ImageItem from '../../components/ImageItem';
 
 const searchUrl = (searchText, page = 1) => {
     const API_URL = 'https://pixabay.com/api/';
@@ -48,13 +49,7 @@ const SearchPage = ({
                 data.hits &&
                 data.hits.length > 0 &&
                 data.hits.map((image, index) => (
-                    <div key={index}>
-                        <img
-                            src={image.previewURL}
-                            alt={`${searchText} - ${index}`}
-                        />
-                        <div>{image.user}</div>
-                    </div>
+                    <ImageItem key={index} searchText={searchText} {...image} />
                 ))}
         </div>
     );
