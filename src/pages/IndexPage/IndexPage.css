@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: calc(100vh - 60px);
 }
 .IndexPage-container {
     max-width: 960px;

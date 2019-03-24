@@ -1,0 +1,6 @@
+.SearchPage {
+    background-color: #fcf8f3;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}

@@ -1,12 +1,16 @@
 import React from 'react';
 import './ImageItem.css';
 
-const ImageItem = ({ searchText, index, previewURL, tags, user }) => {
+const ImageItem = ({ searchText, index, webformatURL, tags, user }) => {
     return (
-        <div>
-            <img src={previewURL} alt={`${searchText} - ${index}`} />
-            <div>{tags}</div>
-            <div>by {user}</div>
+        <div className="ImageItem">
+            <img
+                className="ImageItem-image"
+                src={webformatURL}
+                alt={`${searchText} - ${index}`}
+            />
+            <div className="ImageItem-tags">{tags}</div>
+            <div className="ImageItem-user">by {user}</div>
         </div>
     );
 };

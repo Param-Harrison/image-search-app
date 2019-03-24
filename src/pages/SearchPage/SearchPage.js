@@ -43,15 +43,23 @@ const SearchPage = ({
     }, []);
 
     return (
-        <div>
-            Search result for <strong>{searchText}</strong>
-            {data &&
-                data.hits &&
-                data.hits.length > 0 &&
-                data.hits.map((image, index) => (
-                    <ImageItem key={index} searchText={searchText} {...image} />
-                ))}
-        </div>
+        <section className="SearchPage">
+            <p className="SearchPage-description">
+                Search result for <strong>{searchText}</strong>
+            </p>
+            <section className="SearchPage-image-list">
+                {data &&
+                    data.hits &&
+                    data.hits.length > 0 &&
+                    data.hits.map((image, index) => (
+                        <ImageItem
+                            key={index}
+                            searchText={searchText}
+                            {...image}
+                        />
+                    ))}
+            </section>
+        </section>
     );
 };
 
