@@ -6,7 +6,8 @@
     height: calc(100vh - 60px);
 }
 .IndexPage-container {
-    max-width: 960px;
+    width: 960px;
+    max-width: 100%;
     margin: 0 auto;
     padding-bottom: 60px;
 }

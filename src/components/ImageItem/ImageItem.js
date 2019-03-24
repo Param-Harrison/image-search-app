@@ -9,8 +9,14 @@ const ImageItem = ({ searchText, index, webformatURL, tags, user }) => {
                 src={webformatURL}
                 alt={`${searchText} - ${index}`}
             />
-            <div className="ImageItem-tags">{tags}</div>
-            <div className="ImageItem-user">by {user}</div>
+            <div className="ImageItem-content">
+                <div className="ImageItem-content-container">
+                    <p className="ImageItem-tags">{tags}</p>
+                    <p className="ImageItem-user">
+                        <strong>by {user}</strong>
+                    </p>
+                </div>
+            </div>
         </div>
     );
 };
