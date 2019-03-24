@@ -15,10 +15,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: calc(100vh - 60px);
 }
 .NoMatchPage-container {
-    max-width: 780px;
+    width: 780px;
+    max-width: 100%;
     margin: 0 auto;
 }
 .NoMatchPage-title {

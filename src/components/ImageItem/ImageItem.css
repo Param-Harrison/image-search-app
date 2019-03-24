@@ -1,0 +1,28 @@
+.ImageItem {
+    width: calc(33.33% - 20px);
+    height: 200px;
+    margin: 10px;
+    position: relative;
+}
+.ImageItem-image {
+    width: 100%;
+    height: 100%;
+}
+.ImageItem-content {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 100%;
+}
+.ImageItem-content-container {
+    padding: 10px;
+    color: #fff;
+}
+.ImageItem-tags,
+.ImageItem-user {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
