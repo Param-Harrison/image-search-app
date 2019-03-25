@@ -14,6 +14,10 @@ const NoMatchPage = () => {
                     Thanks for trying my ebook, Keep learning and help me
                     improve my teaching
                 </p>
+                <p>
+                    A website without gradient background is a piece of shit -{' '}
+                    <strong>God Thor</strong>
+                </p>
                 <Link className="NoMatchPage-link" to="/">
                     Go to Main Page
                 </Link>
