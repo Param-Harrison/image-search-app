@@ -1,21 +1,20 @@
 .NoMatchPage {
-    background-color: #d3ede2;
-    background: #d9a7c7; /* fallback for old browsers */
+    background: #ffefba; /* fallback for old browsers */
     background: -webkit-linear-gradient(
         to right,
-        #fffcdc,
-        #d9a7c7
+        #ffffff,
+        #ffefba
     ); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(
         to right,
-        #fffcdc,
-        #d9a7c7
+        #ffffff,
+        #ffefba
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: calc(100vh - 60px);
+    padding: 0 1rem;
 }
 .NoMatchPage-container {
     width: 780px;
@@ -29,4 +28,18 @@
     text-transform: uppercase;
     font-size: 1.2rem;
     text-decoration: none;
+}
+
+@media (max-width: 576px) {
+    .NoMatchPage-title {
+        font-size: 2rem;
+    }
+    .NoMatchPage-container {
+        width: 300px;
+    }
+}
+@media (max-width: 768px) {
+    .NoMatchPage-container {
+        width: 660px;
+    }
 }

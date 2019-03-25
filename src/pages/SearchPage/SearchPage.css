@@ -2,14 +2,36 @@
     background-color: #f6f6f6;
     display: flex;
     min-height: 100vh;
-    padding: 60px 0;
+    padding: 1rem;
 }
 .SearchPage-container {
-    width: 960px;
+    width: 100%;
     max-width: 100%;
     margin: 0 auto;
+}
+.SearchPage-description {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .SearchPage-image-list {
     display: flex;
     flex-flow: row wrap;
+}
+
+@media (min-width: 680px) {
+    .SearchPage-container {
+        width: 660px;
+    }
+}
+@media (min-width: 800px) {
+    .SearchPage-container {
+        width: 780px;
+    }
+}
+@media (min-width: 880px) {
+    .SearchPage-container {
+        width: 860px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
